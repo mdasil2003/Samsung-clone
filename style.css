@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SamsungOne',
+        arial,
+        sans-serif;
+    margin: 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+/* header  */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #fefeff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: red;
+}
+
+/* #navbar li a:hover,
+#navbar li a.active {
+    color: blueviolet;
+} */
+
+/* #navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 60%;
+    height: 2px;
+    background: blueviolet;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+} */
+/* 
+/* home */
+/* #poster {
+    width: 100%;
+    height: 90vh;
+    background-image: url(/images/s23\ lite.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    padding: 300px;
+    padding-left: 800px;
+}
+
+#poster button {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 25px;
+    border-radius: 50px;
+
+}
+
+#poster button:hover {
+    background-color: rgb(53, 51, 51);
+}
+
+
+
+#poster h1 {
+    font-size: 40px;
+}
+
+#poster p {
+    font-size: 20px;
+}
+
+*/
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 1;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.text p {
+    position: relative;
+    font-size: 50px;
+    right: 320px;
+    bottom: 200px;
+}
+
+.btn {
+    position: relative;
+    right: 400px;
+    bottom: 180px;
+    display: inline;
+}
+
+.btn button {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline;
+}
+
+.btn1 {
+    position: relative;
+    left: 10px;
+    bottom: 190px;
+    display: inline;
+}
+
+.btn1 button {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 248, 248);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.text span {
+    position: absolute;
+    right: 400px;
+    bottom: 250px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text1 {
+    position: absolute;
+    left: 40px;
+    bottom: 400px;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.btn2 {
+    display: inline;
+    position: absolute;
+    left: 3rem;
+    bottom: 348px;
+}
+
+.btn2 button {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 248, 248);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+.textl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.textl span {
+    /* position: relative; */
+    bottom: 500px;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+
+
+
+.text {
+    position: absolute;
+
+}
+
+
+.textTV {
+    position: absolute;
+    left: 50px;
+    bottom: 500px;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.btn5 {
+    display: inline;
+    position: absolute;
+    left: 50px;
+    bottom: 250px;
+}
+
+.btn5 button {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 248, 248);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.textT {
+    font-size: 50px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 500px;
+    left: 50px;
+}
+
+.btn3 button {
+    position: absolute;
+    left: 180px;
+}
+
+.btn3 button {
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: rgb(249, 249, 249);
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.textw {
+    font-size: 50px;
+    position: absolute;
+    bottom: 500px;
+    right: 50px;
+}
+
+.btn4 button {
+    /* display: inline; */
+    position: absolute;
+    bottom: 450px;
+    left: 850px;
+}
+
+.btn4 button {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 248, 248);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* section slider end */
+
+/* section weekend start */
+
+#sec2 {
+    width: 100%;
+    height: 110vh;
+    justify-content: center;
+
+
+
+}
+
+.ab {
+    padding-left: 450px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#weekend h1 {
+    justify-content: center;
+    align-items: center;
+}
+
+.weekend {
+    display: flex;
+}
+
+.week1 img {
+    width: 551px;
+    height: 600px;
+    border-radius: 25px;
+
+
+
+}
+
+.week2 {
+
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -10px;
+
+
+
+
+
+}
+
+
+.w1 img {
+    height: 265.93px;
+    width: 265.84px;
+    border-radius: 25px;
+    margin-left: 10px;
+
+
+
+}
+
+.w2 img {
+    height: 265.93px;
+    width: 265.84px;
+    border-radius: 25px;
+    margin-left: 10px;
+
+
+}
+
+.w2 {
+    height: 265.93px;
+    width: 265.84px;
+}
+
+.w1 {
+    height: 265.93px;
+    width: 265.84px;
+}
+
+
+
+.w3 img {
+    height: 265.93px;
+    width: 265.84px;
+    border-radius: 25px;
+    margin-top: -20px;
+    margin-left: 10px;
+
+}
+
+.w4 img {
+    height: 265.93px;
+    width: 265.84px;
+    border-radius: 25px;
+    margin-top: -20px;
+    margin-left: 10px;
+
+}
+
+#navbar2 {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+
+
+
+
+}
+
+#navbar2 li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#navbar2 li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+
+}
+
+#navbar2 li a:hover {
+    color: rgb(82, 79, 79);
+}
+
+.week1 span {
+    font-size: 25px;
+    position: relative;
+    bottom: 200px;
+    left: 180px;
+    font-weight: bold;
+
+}
+
+.wbtn1 button {
+    padding: 10px 20px;
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.wbtn1 button {
+    display: inline;
+    position: relative;
+    bottom: 190px;
+    left: 265px;
+}
+
+.wbtn1 button:hover {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 248, 248);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.w_1 {
+    font-size: 15px;
+    position: relative;
+    width: 220px;
+    bottom: 105px;
+    left: 85px;
+    font-weight: bold;
+}
+
+.w_2 {
+    font-size: 15px;
+    position: relative;
+    width: 220px;
+    bottom: 105px;
+    left: 45px;
+    font-weight: bold;
+
+}
+
+.wbtn2 button {
+    padding: 10px 20px;
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.wbtn2 button {
+    display: inline;
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+}
+
+.wbtn2 button:hover {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 248, 248);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scrolling-wrapper {
+    overflow-x: 9.0;
+    overflow-y: hidden;
+    display: flex;
+
+    height: 600px;
+    scroll-behavior: smooth;
+
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card-block {
+    height: 650px;
+    background-color: #fff;
+    border: none;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.2s ease-in-out !important;
+    border-radius: 25px;
+    margin: 0px 100px 0px 100px;
+
+    /* &:hover {
+        transform: translateY(-5px);
+        box-shadow: none;
+        opacity: 0.9;
+    } */
+}
+
+
+
+/* .card-2 {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.card-3 {
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  image slider On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px;
+    }
+}
